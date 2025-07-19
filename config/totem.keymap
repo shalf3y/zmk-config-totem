@@ -42,28 +42,37 @@
 
         base {
             bindings = <
-                 &kp Q  &kp W  &kp E          &kp R           &kp T           &kp Y         &kp U     &kp I         &kp O    &kp P
-                 &kp A  &kp S  &kp D          &kp F           &kp G           &kp H         &kp J     &kp K         &kp L    &kp SEMI
-&mt LSHFT GRAVE  &kp Z  &kp X  &kp C          &kp V           &kp B           &kp N         &kp M     &kp COMMA     &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                               &mt LCTRL TAB  &mt LGUI SPACE  &lt 2 RETURN    &lt 1 ESCAPE  &kp BSPC  &lt 2 DELETE
+                 &mt LCTRL Q  &kp W  &kp E      &kp R           &kp T           &kp Y         &kp U          &kp I         &kp O    &mt P RCTRL
+                 &mt A LALT   &kp S  &kp D      &kp F           &kp G           &kp H         &kp J          &kp K         &kp L    &mt RALT SEMICOLON
+&mt LSHFT GRAVE  &kp Z        &kp X  &kp C      &kp V           &kp B           &kp N         &kp M          &kp COMMA     &kp DOT  &kp FSLH            &mt RSHFT BSLH
+                                     &lt 1 TAB  &mt LGUI SPACE  &lt 2 RETURN    &lt 1 ESCAPE  &mt BSPC RGUI  &lt 2 DELETE
             >;
         };
 
-        lower {
+        sym {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+            &kp F1    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            &kp EXCL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LSHIFT  &kp N0    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
-        raise {
+        num {
             bindings = <
         &kp CAPS   &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &kp C_VOL_UP  &kp HOME  &kp UP                &kp PG_UP  &kp C_BRI_UP
         &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans    &kp C_MUTE    &kp LEFT  &kp DOWN              &kp RIGHT  &kp C_PLAY
 &trans  &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans    &kp C_VOL_DN  &kp END   &kp LS(LA(NUMBER_4))  &kp PG_DN  &kp C_BRI_DN  &trans
                               &trans     &trans     &trans    &trans        &trans    &trans
+            >;
+        };
+
+        adj {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
