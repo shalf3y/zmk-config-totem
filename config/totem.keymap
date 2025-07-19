@@ -36,91 +36,91 @@
             bindings = <&kp LBKT>;
             key-positions = <13 14>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         rbkt {
             bindings = <&kp RBKT>;
             key-positions = <15 16>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
             key-positions = <3 4>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
             key-positions = <6 5>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         lbrc {
             bindings = <&kp LBRC>;
             key-positions = <24 25>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         rbrc {
             bindings = <&kp RBRC>;
             key-positions = <26 27>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         return {
             bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         escape {
             bindings = <&kp ESC>;
             key-positions = <11 12 13>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         dqt {
             bindings = <&kp DQT>;
             key-positions = <16 17>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <3 2>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <6 7>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <1 2>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <7 8>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         sqt {
