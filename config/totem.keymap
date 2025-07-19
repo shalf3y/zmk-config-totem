@@ -28,38 +28,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
-        };
-    };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -73,14 +42,14 @@
 
         base {
             bindings = <
-                 &kp Q  &kp W  &kp E        &kp R           &kp T           &kp Y    &kp U     &kp I      &kp O    &kp P
-                 &kp A  &kp S  &kp D        &kp F           &kp G           &kp H    &kp J     &kp K      &kp L    &kp SEMI
-&mt LSHFT GRAVE  &kp Z  &kp X  &kp C        &kp V           &kp B           &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                               &lt 1 LCTRL  &mt LGUI SPACE  &lt 2 RETURN    &kp ESC  &kp BSPC  &kp DEL
+                 &kp Q  &kp W  &kp E      &kp R           &kp T           &kp Y         &kp U     &kp I         &kp O    &kp P
+                 &kp A  &kp S  &kp D      &kp F           &kp G           &kp H         &kp J     &kp K         &kp L    &kp SEMI
+&mt LSHFT GRAVE  &kp Z  &kp X  &kp C      &kp V           &kp B           &kp N         &kp M     &kp COMMA     &kp DOT  &kp FSLH  &mt RSHFT BSLH
+                               &lt 2 TAB  &mt LGUI SPACE  &lt 1 RETURN    &lt 1 ESCAPE  &kp BSPC  &lt 2 DELETE
             >;
         };
 
-        raise {
+        lower {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -89,7 +58,7 @@
             >;
         };
 
-        lower {
+        raise {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
